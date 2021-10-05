@@ -10,8 +10,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+<<<<<<< HEAD
 import javax.swing.plaf.nimbus.State;
 import java.awt.*;
+=======
+>>>>>>> d1c4e3e (Initial commit)
 import java.util.concurrent.TimeUnit;
 
 public class CDCKerjain {
@@ -47,6 +50,7 @@ public class CDCKerjain {
     public void filterWorker() {
         WebDriverWait wait = new WebDriverWait(driver,5);
 
+<<<<<<< HEAD
         //enterweb
         driver.findElement(By.xpath("/html/body/div[2]/div[1]/div/button")).click();
 
@@ -62,6 +66,18 @@ public class CDCKerjain {
 
         //sign up page
 
+=======
+        //findjob
+        driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]")).click();
+
+        //relevance
+        Select drpRelevance = new Select(driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]/div[1]/*[1]")));
+
+        // Select the option using the visible text
+        drpRelevance.selectByVisibleText("Cheapest");
+
+
+>>>>>>> d1c4e3e (Initial commit)
 
     }
 }
