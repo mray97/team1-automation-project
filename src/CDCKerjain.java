@@ -10,11 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-<<<<<<< HEAD
-import javax.swing.plaf.nimbus.State;
-import java.awt.*;
-=======
->>>>>>> d1c4e3e (Initial commit)
 import java.util.concurrent.TimeUnit;
 
 public class CDCKerjain {
@@ -24,7 +19,7 @@ public class CDCKerjain {
 
     @BeforeClass
     public void setup() {
-        if (browser.equals("Firefox"))
+        if(browser.equals("Firefox"))
         {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
@@ -50,34 +45,16 @@ public class CDCKerjain {
     public void filterWorker() {
         WebDriverWait wait = new WebDriverWait(driver,5);
 
-<<<<<<< HEAD
-        //enterweb
-        driver.findElement(By.xpath("/html/body/div[2]/div[1]/div/button")).click();
-
-        //relevance
-        Button Relevance=new Button(driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[3]/div/div[2]/div/div[1]/div[2]/div/div/button")));
-
-        Relevance.selectByVisibleText("Cheapest");
-
-
-        //navigate to sign up
-
-        //input email
-
-        //sign up page
-
-=======
-        //findjob
+        //findJob
         driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]")).click();
 
-        //relevance
-        Select drpRelevance = new Select(driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]/div[1]/*[1]")));
+        // click filter
+        driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[3]/div/div[2]/div/div[1]/div[2]/div/div/button")).click();
 
-        // Select the option using the visible text
-        drpRelevance.selectByVisibleText("Cheapest");
+        // Select filter
+        driver.findElement(By.xpath("//div[contains(text(), 'Cheapest')]")).click();
 
 
->>>>>>> d1c4e3e (Initial commit)
 
     }
 }
