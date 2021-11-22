@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/Selenium jars and drivers/jars/selenium-server-standalone-3.141.59.jar!/" />
+          <root url="jar://D:/Automation/jar &amp; driver/jars/selenium-server-standalone-3.141.59.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/Selenium jars and drivers/jars/webdrivermanager-5.0.3-fat.jar!/" />
+          <root url="jar://D:/Automation/jar &amp; driver/jars/testng-7.4.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/Selenium jars and drivers/jars/testng-7.4.0.jar!/" />
+          <root url="jar://D:/Automation/jar &amp; driver/jars/webdrivermanager-5.0.3-fat.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
